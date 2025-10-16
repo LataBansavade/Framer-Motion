@@ -1,9 +1,10 @@
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import StaggeringANimations from "./components/StaggeringANimations";
 import SequenceAnimations from "./components/SequenceAnimations";
 import Sequence2 from "./components/Sequence2";
 import { Routes,Route } from "react-router-dom";
 import ScrollAnimation from "./components/ScrollAnimation";
+import { AnimatedTestimonialsDemo } from "./components/AnimatedTestimonialsDemo";
 
 
 
@@ -20,6 +21,7 @@ const App = () => {
         <a className="text-blue-400 mr-3 mt-3" href="/StaggeringANimations">Staggering Animations</a>
         <a className="text-blue-400 mr-3 mt-3" href="/SequenceAnimations">Sequence Animations</a>
         <a className="text-blue-400 mr-3 mt-3" href="/Sequence2">Sequence 2</a>
+        <a className="text-blue-400 mr-3 mt-3" href="/AnimatedTestimonialsDemo">Animated Testimonials</a>
       </div>
       </div>
 
@@ -28,6 +30,7 @@ const App = () => {
         <Route path={"/StaggeringANimations"} element={<StaggeringANimations />} />
         <Route path={"/SequenceAnimations"} element={<SequenceAnimations />} />
         <Route path={"/Sequence2"} element={<Sequence2 />} />
+        <Route path={"/AnimatedTestimonialsDemo"} element={<AnimatedTestimonialsDemo />} />
       </Routes>
       {/* <motion.div
         drag
